@@ -108,13 +108,13 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h2 class="section-title">提个建议（未完成）</h2>
+				<h2 class="section-title">提个建议</h2>
 			</div>
 			<div class="col-md-8 col-md-offset-2">
-				<form id="contact" method="post" class="form" role="form">
+				<form action="https://formspree.io/mjvabnen" method="POST">
 					<div class="row">
 						<div class="col-md-6 form-group">
-							<input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required />
 						</div>
 						<div class="col-md-6 form-group">
 							<input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
@@ -124,7 +124,7 @@
 					<br />
 					<div class="row">
 						<div class="col-md-12 form-group">
-							<button class="btn btn-primary" type="submit">发送</button>
+							<button id="contact-button" class="btn btn-primary" type="submit">发送</button>
 						</div>
 					</div>
 				</form>
