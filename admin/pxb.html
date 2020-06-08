@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="60" />
+<title>AK IOI is our dream</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://ak-ioi-is-our-dream.github.io/css/bootstrap.min.css">
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+<!-- Font Awesome -->
+<link href='https://ak-ioi-is-our-dream.github.io/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+<!-- Style -->
+<link href='https://ak-ioi-is-our-dream.github.io/style.css' rel='stylesheet' type='text/css'>
+<!-- Markdown css -->
+<link href='https://ak-ioi-is-our-dream.github.io/article/vue.css' rel='stylesheet' type='text/css'>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<a class="navbar-brand" href="https://ak-ioi-is-our-dream.github.io/">AK IOI is our dream</a>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://ak-ioi-is-our-dream.github.io/">Home</a></li>
+				<li><a href="https://ak-ioi-is-our-dream.github.io/article/">文章栏</a></li>
+				<li><a href="https://ak-ioi-is-our-dream.github.io/article/团队入团须知/">团队入团须知</a></li>
+				<li><a href="https://ak-ioi-is-our-dream.github.io/article/guan-wang-li-shi/">官网历史</a></li>
+				<!--
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+					</ul>
+				</li>
+				-->
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
+</nav>
+
+<!-- START SECTION -->
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1 id="biaoti" class="section-title">排行榜生成中...</h1>
+			</div>
+      <div id="resText"><center><h3>请稍后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></center></div>
+		</div>
+	</div>
+</div>
+<!--/.section -->
+<script type="text/javascript" >
+  var pxb=[
+		//{"uid":洛谷id,"uname":"洛谷用户名","District":0,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":3843,"uname":"BDF1","District":0,"Municipal":0,"NOIP":1,"NOI":0,"IOI":0},
+		{"uid":335697,"uname":"无尽的追风者","District":0,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":262911,"uname":"wangyilin","District":4,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":97136,"uname":"chenzida","District":2,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":257601,"uname":"jyb666","District":5,"Municipal":4,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":334674,"uname":"你谔谔","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":192044,"uname":"wjq1234567","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":236873,"uname":"黄锦扬2020","District":0,"Municipal":2,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":338556,"uname":"宇宙纪念册","District":2,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":321529,"uname":"xiaozengX","District":1,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":272088,"uname":"liqingyang","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":205821,"uname":"553032651yyj","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":342482,"uname":"⎛⎞⎝⎠","District":8,"Municipal":3,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":270120,"uname":"qym2008","District":6,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+	]
+	pxb.sort(function(a,b){
+		var x=a["District"]*1+a["Municipal"]*10+a["NOIP"]*100+a["NOI"]*1000+a["IOI"]*10000;
+		var y=b["District"]*1+b["Municipal"]*10+b["NOIP"]*100+b["NOI"]*1000+b["IOI"]*10000;
+		return y - x;
+	});
+	var out=" | ranking | name | IOI | NOI | NOIP | Municipal | District | \n";
+	out+=" | :---: | :---: | :---: | :---: | :---: | :---: | :---: | \n";
+	for(var i=0;i<pxb.length;i++){
+		out+=" | "+(i+1)+" | ["+pxb[i]["uname"]+"](https://www.luogu.com.cn/user/"+pxb[i]["uid"]+") | "
+		+pxb[i]["IOI"]+" | "+pxb[i]["NOI"]+" | "+pxb[i]["NOIP"]
+		+" | "+pxb[i]["Municipal"]+" | "+pxb[i]["District"]+" | \n";
+	}
+	console.log(out);
+	out="<center>\n"+marked(out)+"</center>\n";
+  document.getElementById("biaoti").innerHTML = "排行榜";
+  document.getElementById("resText").innerHTML = out;
+</script>
+<!-- START SECTION -->
+<div class="section background-dark dark-bg">
+	<div class="container">
+		<div class="row">
+			<!--
+			<div class="col-md-3">
+				<h3 class="text-uppercase font-size-md letter-spacing-md font-weight-lg "></h3>
+			</div>
+			<div class="col-md-12 margin-top-md margin-bottom-md" style="opacity: .2;">
+				<hr/>
+			</div>
+			-->
+			<div class="col-md-12 margin-top-md text-center font-size-sm text-upercase">
+				<p>©2020 AK IOI is our dream 团队 版权所有 | 由<a href="https://www.luogu.com.cn/user/257601">jyb666</a>进行维护</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/.section -->
+
+<!-- jQuery -->
+<script src="https://ak-ioi-is-our-dream.github.io/js/jquery.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://ak-ioi-is-our-dream.github.io/js/bootstrap.min.js"></script>
+</body>
+</html>
