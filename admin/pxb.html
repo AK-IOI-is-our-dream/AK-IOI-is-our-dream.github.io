@@ -36,19 +36,6 @@
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="https://ak-ioi-is-our-dream.github.io/">Home</a></li>
-				<li><a href="https://ak-ioi-is-our-dream.github.io/article/">文章栏</a></li>
-				<li><a href="https://ak-ioi-is-our-dream.github.io/article/团队入团须知/">团队入团须知</a></li>
-				<li><a href="https://ak-ioi-is-our-dream.github.io/article/guan-wang-li-shi/">官网历史</a></li>
-				<!--
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog<b class="caret"></b></a>
-					<ul class="dropdown-menu">
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-					</ul>
-				</li>
-				-->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div>
@@ -59,47 +46,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<h1 id="biaoti" class="section-title">排行榜生成中...</h1>
+				<h1 id="biaoti" class="section-title">排行榜数据修改</h1>
 			</div>
-      <div id="resText"><center><h3>请稍后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></center></div>
+      <div id="resText"></div>
 		</div>
 	</div>
 </div>
 <!--/.section -->
+<script src="https://ak-ioi-is-our-dream.github.io/js/pxb.js"></script>
 <script type="text/javascript" >
-  var pxb=[
-		//{"uid":洛谷id,"uname":"洛谷用户名","District":0,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":3843,"uname":"BDF1","District":0,"Municipal":0,"NOIP":1,"NOI":0,"IOI":0},
-		{"uid":335697,"uname":"无尽的追风者","District":0,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":262911,"uname":"wangyilin","District":4,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":97136,"uname":"chenzida","District":2,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":257601,"uname":"jyb666","District":5,"Municipal":4,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":334674,"uname":"你谔谔","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":192044,"uname":"wjq1234567","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":236873,"uname":"黄锦扬2020","District":0,"Municipal":2,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":338556,"uname":"宇宙纪念册","District":2,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":321529,"uname":"xiaozengX","District":1,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":272088,"uname":"liqingyang","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":205821,"uname":"553032651yyj","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":342482,"uname":"⎛⎞⎝⎠","District":8,"Municipal":3,"NOIP":0,"NOI":0,"IOI":0},
-		{"uid":270120,"uname":"qym2008","District":6,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
-	]
-	pxb.sort(function(a,b){
-		var x=a["District"]*1+a["Municipal"]*10+a["NOIP"]*100+a["NOI"]*1000+a["IOI"]*10000;
-		var y=b["District"]*1+b["Municipal"]*10+b["NOIP"]*100+b["NOI"]*1000+b["IOI"]*10000;
-		return y - x;
-	});
-	var out=" | ranking | name | IOI | NOI | NOIP | Municipal | District | \n";
-	out+=" | :---: | :---: | :---: | :---: | :---: | :---: | :---: | \n";
-	for(var i=0;i<pxb.length;i++){
-		out+=" | "+(i+1)+" | ["+pxb[i]["uname"]+"](https://www.luogu.com.cn/user/"+pxb[i]["uid"]+") | "
-		+pxb[i]["IOI"]+" | "+pxb[i]["NOI"]+" | "+pxb[i]["NOIP"]
-		+" | "+pxb[i]["Municipal"]+" | "+pxb[i]["District"]+" | \n";
-	}
-	console.log(out);
-	out="<center>\n"+marked(out)+"</center>\n";
-  document.getElementById("biaoti").innerHTML = "排行榜";
-  document.getElementById("resText").innerHTML = out;
+	
 </script>
 <!-- START SECTION -->
 <div class="section background-dark dark-bg">
