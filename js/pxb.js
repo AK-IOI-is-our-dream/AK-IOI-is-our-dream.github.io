@@ -1,0 +1,17 @@
+  var pxb=[
+		//{"uid":洛谷id,"uname":"洛谷用户名","District":0,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":3843,"uname":"BDF1","District":0,"Municipal":0,"NOIP":1,"NOI":0,"IOI":0},
+		{"uid":335697,"uname":"无尽的追风者","District":0,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":262911,"uname":"wangyilin","District":4,"Municipal":7,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":97136,"uname":"chenzida","District":2,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":257601,"uname":"jyb666","District":5,"Municipal":4,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":334674,"uname":"你谔谔","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":192044,"uname":"wjq1234567","District":4,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":236873,"uname":"黄锦扬2020","District":0,"Municipal":2,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":338556,"uname":"宇宙纪念册","District":2,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":321529,"uname":"xiaozengX","District":1,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":272088,"uname":"liqingyang","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":205821,"uname":"553032651yyj","District":5,"Municipal":1,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":342482,"uname":"⎛⎞⎝⎠","District":8,"Municipal":3,"NOIP":0,"NOI":0,"IOI":0},
+		{"uid":270120,"uname":"qym2008","District":6,"Municipal":0,"NOIP":0,"NOI":0,"IOI":0},
+	];
