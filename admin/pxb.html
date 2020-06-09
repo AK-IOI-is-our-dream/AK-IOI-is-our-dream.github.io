@@ -90,7 +90,7 @@
 	    a["IOI"]=$("input[name='IOI']").val();
           }
 	for(var i=0;i<pxb.length;i++){
-		if((pxb[i]["uname"]==$("input[name='uname']").val())&&(pxb[i]["uid"]==$("input[name='uid']").val()))
+		if((pxb[i]["uname"]==$("input[name='uname']").val())||(pxb[i]["uid"]==$("input[name='uid']").val()))
 		{
 			pxb[i]["District"]+=a["District"];
 			pxb[i]["Municipal"]+=a["Municipal"];
