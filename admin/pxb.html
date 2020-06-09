@@ -69,8 +69,8 @@
 	{
 	  var str=JSON.stringify(pxb);
           str = str.replace(/},/g,"},\n");
-          str = str.replace(/[/g,"[\n");
           str = str.replace(/]/g,"]\n");
+          str = str.replace(/[/g,"[\n");
 	  $("#resText").html("@jyb666 \n```javascript\n"+str+"```");
 	}
 	xg();
