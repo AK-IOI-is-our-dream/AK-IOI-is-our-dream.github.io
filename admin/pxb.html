@@ -92,11 +92,11 @@
 	for(var i=0;i<pxb.length;i++){
 		if((pxb[i]["uname"]==$("input[name='uname']").val())||(pxb[i]["uid"]==$("input[name='uid']").val()))
 		{
-			pxb[i]["District"]+=a["District"];
-			pxb[i]["Municipal"]+=a["Municipal"];
-			pxb[i]["NOIP"]+=a["NOIP"];
-			pxb[i]["NOI"]+=a["NOI"];
-			pxb[i]["IOI"]+=a["IOI"];
+			pxb[i]["District"]+=parseInt(a["District"]);
+			pxb[i]["Municipal"]+=parseInt(a["Municipal"]);
+			pxb[i]["NOIP"]+=parseInt(a["NOIP"]);
+			pxb[i]["NOI"]+=parseInt(a["NOI"]);
+			pxb[i]["IOI"]+=parseInt(a["IOI"]);
 		}
 	}
 	  var str=JSON.stringify(pxb);
