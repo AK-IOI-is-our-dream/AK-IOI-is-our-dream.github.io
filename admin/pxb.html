@@ -49,11 +49,11 @@
 				<h1 id="biaoti" class="section-title">排行榜数据修改</h1>
 				洛谷uid：<input type="text" name="uid">
 				洛谷uname：<input type="text" name="uname"><br/>
-				District&nbsp;：<input type="text" name="District"><br/>
+				&nbsp;&nbsp;&nbsp;District：<input type="text" name="District"><br/>
 				Municipal：<input type="text" name="Municipal"><br/>
-				NOIP&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：<input type="text" name="NOIP"><br/>
-				NOI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：<input type="text" name="NOI"><br/>
-				IOI&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;：<input type="text" name="IOI"><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOIP：<input type="text" name="NOIP"><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOI：<input type="text" name="NOI"><br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IOI：<input type="text" name="IOI"><br/>
 				<a href="javascript:void(0);" onclick="xg()">[增加积分]</a>
 			</div>
 			<div>请将下面markdown代码复制并且回复到<a href="https://www.luogu.com.cn/discuss/show/230161">团队积分整理贴</a></div>
@@ -69,8 +69,8 @@
 	{
 	  var str=JSON.stringify(pxb);
           str = str.replace(/},/g,"},\n");
-          str = str.replace(/\]/g,"]\n");
-          str = str.replace(/\[/g,"\n[");
+          str = str.replace(/\[/g,"[\n");
+          str = str.replace(/\]/g,"\n]");
 	  $("#resText").html("@jyb666 \n\n```javascript\n"+str+"\n```\n");
 	}
 	xg();
